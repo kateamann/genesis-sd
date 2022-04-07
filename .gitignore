@@ -1,0 +1,6 @@
+# Sass cache
+.sass-cache/
+
+# Development files
+/node_modules
+config.codekit3

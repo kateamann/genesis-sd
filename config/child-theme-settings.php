@@ -1,11 +1,11 @@
 <?php
 /**
- * Genesis Sample theme settings.
+ * Genesis SD theme settings.
  *
  * Genesis 2.9+ updates these settings when themes are activated.
  *
- * @package Genesis Sample
- * @author  StudioPress
+ * @package Genesis SD
+ * @author  Kate Amann
  * @license GPL-2.0-or-later
  * @link    https://www.studiopress.com/
  */

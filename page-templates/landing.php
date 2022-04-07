@@ -1,13 +1,13 @@
 <?php
 /**
- * Genesis Sample.
+ * Genesis SD.
  *
- * This file adds the landing page template to the Genesis Sample Theme.
+ * This file adds the landing page template to the Genesis SD Theme.
  *
  * Template Name: Landing
  *
- * @package Genesis Sample
- * @author  StudioPress
+ * @package Genesis SD
+ * @author  Kate Amann
  * @license GPL-2.0-or-later
  * @link    https://www.studiopress.com/
  */

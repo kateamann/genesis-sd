@@ -1,4 +1,4 @@
-# Genesis Sample Theme
+# Genesis SD Theme
 
 GitHub project link: https://github.com/studiopress/genesis-sample/.
 

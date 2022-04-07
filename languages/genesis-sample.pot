@@ -51,38 +51,6 @@ msgstr ""
 msgid "by"
 msgstr ""
 
-#: config/onboarding-shared.php:19
-msgid "Genesis Blocks"
-msgstr ""
-
-#: config/onboarding-shared.php:24
-msgid "Simple Social Icons"
-msgstr ""
-
-#: config/onboarding-shared.php:29
-msgid "Genesis eNews Extended (Third Party)"
-msgstr ""
-
-#: config/onboarding-shared.php:34
-msgid "WPForms Lite (Third Party)"
-msgstr ""
-
-#: config/onboarding.php:18
-msgid "Black & White"
-msgstr ""
-
-#: config/onboarding.php:19
-msgid "A pack with a homepage designed with black and white images."
-msgstr ""
-
-#: config/onboarding.php:50
-msgid "Color"
-msgstr ""
-
-#: config/onboarding.php:51
-msgid "A pack with a homepage designed with color images."
-msgstr ""
-
 #: config/theme-supports.php:39
 msgid "Header Menu"
 msgstr ""
@@ -153,12 +121,8 @@ msgstr ""
 msgid "Next Page"
 msgstr ""
 
-#: lib/wpforms.php:55
-msgid "Simple Contact Form"
-msgstr ""
-
 #. Theme Name of the plugin/theme
-msgid "Genesis Sample"
+msgid "Genesis SD"
 msgstr ""
 
 #. Theme URI of the plugin/theme
@@ -166,15 +130,15 @@ msgid "https://demo.studiopress.com/"
 msgstr ""
 
 #. Description of the plugin/theme
-msgid "This is the sample theme created for the Genesis Framework."
+msgid "This is a customised starter theme based on Genesis Sample for the Genesis Framework."
 msgstr ""
 
 #. Author of the plugin/theme
-msgid "StudioPress"
+msgid "Kate Amann"
 msgstr ""
 
 #. Author URI of the plugin/theme
-msgid "https://www.studiopress.com/"
+msgid "https://kateamann.com/"
 msgstr ""
 
 #. Template Name of the plugin/theme

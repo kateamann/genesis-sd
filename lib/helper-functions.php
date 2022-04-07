@@ -1,11 +1,11 @@
 <?php
 /**
- * Genesis Sample.
+ * Genesis SD.
  *
- * This file adds the required helper functions used in the Genesis Sample Theme.
+ * This file adds the required helper functions used in the Genesis SD Theme.
  *
- * @package Genesis Sample
- * @author  StudioPress
+ * @package Genesis SD
+ * @author  Kate Amann
  * @license GPL-2.0-or-later
  * @link    https://www.studiopress.com/
  */

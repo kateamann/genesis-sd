@@ -1,9 +1,9 @@
 <?php
 /**
- * Genesis Sample child theme.
+ * Genesis SD child theme.
  *
- * @package Genesis Sample
- * @author  StudioPress
+ * @package Genesis SD
+ * @author  Kate Amann
  * @license GPL-2.0-or-later
  * @link    https://my.studiopress.com/themes/genesis-sample/
  */

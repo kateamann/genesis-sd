@@ -1,0 +1,70 @@
+/* Forms
+--------------------------------------------- */
+
+input,
+select,
+textarea {
+	background-color: $white;
+	border: 1px solid $border-color;
+	color: $base-color;
+	font-size: 18px;
+	line-height: 24px;
+	padding: 14px 16px;
+	width: 100%;
+}
+
+input:focus,
+textarea:focus {
+	border: 1px solid $highlight;
+	outline: none;
+}
+
+input[type="checkbox"],
+input[type="image"],
+input[type="radio"] {
+	width: auto;
+}
+
+:-ms-input-placeholder {
+	color: $base-color;
+	opacity: 1;
+}
+
+::placeholder {
+	color: $base-color;
+	opacity: 1;
+}
+
+textarea {
+	width: 100%;
+}
+
+
+
+
+/* Search Form
+--------------------------------------------- */
+
+.search-form {
+	overflow: hidden;
+}
+
+.entry-content .search-form {
+	margin-bottom: 40px;
+	width: 50%;
+}
+
+.post-password-form input[type="submit"],
+.search-form input[type="submit"] {
+	margin-top: 10px;
+}
+
+.widget_search input[type="submit"] {
+	border: 0;
+	clip: rect(0, 0, 0, 0);
+	height: 1px;
+	margin: -1px;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}

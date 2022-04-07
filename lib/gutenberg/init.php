@@ -2,28 +2,28 @@
 /**
  * Gutenberg theme support.
  *
- * @package Genesis Sample
- * @author  StudioPress
+ * @package Genesis SD
+ * @author  Kate Amann
  * @license GPL-2.0-or-later
  * @link    https://www.studiopress.com/
  */
 
-add_action( 'wp_enqueue_scripts', 'genesis_sample_enqueue_gutenberg_frontend_styles' );
-/**
- * Enqueues Gutenberg front-end styles.
- *
- * @since 2.7.0
- */
-function genesis_sample_enqueue_gutenberg_frontend_styles() {
+// add_action( 'wp_enqueue_scripts', 'genesis_sample_enqueue_gutenberg_frontend_styles' );
+// /**
+//  * Enqueues Gutenberg front-end styles.
+//  *
+//  * @since 2.7.0
+//  */
+// function genesis_sample_enqueue_gutenberg_frontend_styles() {
 
-	wp_enqueue_style(
-		genesis_get_theme_handle() . '-gutenberg',
-		get_stylesheet_directory_uri() . '/lib/gutenberg/front-end.css',
-		[ genesis_get_theme_handle() ],
-		genesis_get_theme_version()
-	);
+// 	wp_enqueue_style(
+// 		genesis_get_theme_handle() . '-gutenberg',
+// 		get_stylesheet_directory_uri() . '/lib/gutenberg/front-end.css',
+// 		[ genesis_get_theme_handle() ],
+// 		genesis_get_theme_version()
+// 	);
 
-}
+// }
 
 add_action( 'enqueue_block_editor_assets', 'genesis_sample_block_editor_styles' );
 /**
@@ -41,6 +41,7 @@ function genesis_sample_block_editor_styles() {
 		[],
 		genesis_get_theme_version()
 	);
+	wp_enqueue_script( 'sd-editor', get_stylesheet_directory_uri() . '/assets/js/editor.js', array( 'wp-blocks', 'wp-dom' ), filemtime( get_stylesheet_directory() . '/assets/js/editor.js' ), true );
 
 }
 
@@ -87,7 +88,7 @@ function genesis_sample_blocks_body_classes( $classes ) {
 add_theme_support( 'editor-styles' );
 
 // Enqueue editor styles.
-add_editor_style( '/lib/gutenberg/style-editor.css' );
+add_editor_style( '/assets/css/editor-style.css' );
 
 // Adds support for block alignments.
 add_theme_support( 'align-wide' );

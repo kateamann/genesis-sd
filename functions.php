@@ -1,20 +1,17 @@
 <?php
 /**
- * Genesis Sample.
+ * Genesis SD.
  *
- * This file adds functions to the Genesis Sample Theme.
+ * This file adds functions to the Genesis SD Theme.
  *
- * @package Genesis Sample
- * @author  StudioPress
+ * @package Genesis SD
+ * @author  Kate Amann
  * @license GPL-2.0-or-later
  * @link    https://www.studiopress.com/
  */
 
 // Starts the engine.
 require_once get_template_directory() . '/lib/init.php';
-
-// Sets up the Theme.
-require_once get_stylesheet_directory() . '/lib/theme-defaults.php';
 
 add_action( 'after_setup_theme', 'genesis_sample_localization_setup' );
 /**
@@ -46,15 +43,18 @@ require_once get_stylesheet_directory() . '/lib/woocommerce/woocommerce-output.p
 // Adds the Genesis Connect WooCommerce notice.
 require_once get_stylesheet_directory() . '/lib/woocommerce/woocommerce-notice.php';
 
-add_action( 'after_setup_theme', 'genesis_child_gutenberg_support' );
+
+
 /**
- * Adds Gutenberg opt-in features and styling.
+ * Gutenberg scripts and styles
  *
- * @since 2.7.0
  */
-function genesis_child_gutenberg_support() { // phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedFunctionFound -- using same in all child themes to allow action to be unhooked.
+function sd_gutenberg_scripts() { // phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedFunctionFound -- using same in all child themes to allow action to be unhooked.
 	require_once get_stylesheet_directory() . '/lib/gutenberg/init.php';
 }
+add_action( 'after_setup_theme', 'sd_gutenberg_scripts' );
+
+
 
 // Registers the responsive menus.
 if ( function_exists( 'genesis_register_responsive_menus' ) ) {
@@ -71,12 +71,14 @@ function genesis_sample_enqueue_scripts_styles() {
 
 	$appearance = genesis_get_config( 'appearance' );
 
+	wp_dequeue_style( 'child-theme' );
 	wp_enqueue_style( // phpcs:ignore WordPress.WP.EnqueuedResourceParameters.MissingVersion -- see https://core.trac.wordpress.org/ticket/49742
 		genesis_get_theme_handle() . '-fonts',
 		$appearance['fonts-url'],
 		[],
 		null
 	);
+	wp_enqueue_style( 'sd-style', get_stylesheet_directory_uri() . '/assets/css/main.css', array(), filemtime( get_stylesheet_directory() . '/assets/css/main.css' ) );
 
 	wp_enqueue_style( 'dashicons' );
 
@@ -191,6 +193,9 @@ function genesis_sample_post_type_support() {
 	}
 
 }
+
+//* Enable the block-based widget editor
+add_filter( 'use_widgets_block_editor', '__return_true' );
 
 // Adds image sizes.
 add_image_size( 'sidebar-featured', 75, 75, true );
